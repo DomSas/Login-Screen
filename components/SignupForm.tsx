@@ -32,8 +32,10 @@ const SignupForm: React.FC = () => {
   } = useForm<FormInputs>({
     resolver: yupResolver(validationSchema),
   });
-  const onSubmit: SubmitHandler<FormInputs> = (data) => {console.log(data);
-router.push('/Dashboard')};
+  const onSubmit: SubmitHandler<FormInputs> = (data) => {
+    console.log(data);
+    router.push("/Dashboard");
+  };
 
   return (
     <>
@@ -68,7 +70,7 @@ router.push('/Dashboard')};
           <div className={styles["signup-form__form-check"]}>
             <input type='checkbox' id='terms' {...register("acceptTerms")} />
             <label htmlFor='acceptTerms'>
-              I accept our{" "}
+              I accept the{" "}
               <u className={styles["signup-form__link"]}>Term of Service</u> and{" "}
               <u className={styles["signup-form__link"]}>Privacy Policy</u>.
             </label>
@@ -80,7 +82,6 @@ router.push('/Dashboard')};
             <input
               type='submit'
               value='Sign Up'
-              onClick={() => console.log(errors)}
             />
             <p>Or</p>
             <button>

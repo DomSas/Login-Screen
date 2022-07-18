@@ -15,12 +15,6 @@
     font-size: 30px;
   }
 
-  &__error {
-    font-size: 10px;
-    font-weight: 500;
-    color: $dark-red;
-  }
-
   &__form-group {
     display: flex;
     flex-direction: column;
@@ -47,6 +41,12 @@
     input:focus {
       outline-width: 0;
     }
+  }
+
+  &__error {
+    font-size: 10px;
+    font-weight: 500;
+    color: $dark-red;
   }
 
   &__form-check {
@@ -115,6 +115,6 @@
   }
 
   &__google-image {
-    margin: 2px 5px 0 0 ;
+    margin: 2px 5px 0 0;
   }
 }
