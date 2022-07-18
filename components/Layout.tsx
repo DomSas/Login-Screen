@@ -1,6 +1,11 @@
+import { ScriptProps } from "next/script";
 import Footer from "./Footer";
 
-const Layout: React.FC = ({ children }) => {
+type BoxProps = {
+    children: React.ReactNode; // 👈️ type children
+  };
+
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }: ScriptProps) => {
   return (
     <>
       {children}
