@@ -1,0 +1,12 @@
+@import "colors";
+
+.text {
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+
+  font-size: 13px;
+  color: $light-grey;
+}

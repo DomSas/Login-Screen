@@ -1,0 +1,41 @@
+@import "colors";
+
+.signup-page {
+  display: flex;
+  flex-direction: row;
+  width: 950px;
+  height: 700px;
+
+  background: #ffffff;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25), 4px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  &__primary-text {
+    margin: 60px 0 5px 0;
+
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  &__secondary-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: $light-grey;
+  }
+
+  &__intro {
+    width: 50%;
+    padding: 40px;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    margin: 100px auto;
+  }
+
+  &__form {
+    width: 50%;
+  }
+}
